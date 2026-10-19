@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muzza Pizzarias - Central de Pedidos</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            padding: 20px 15px;
+        }
+        .container {
+            width: 100%;
+            max-width: 420px;
+            text-align: center;
+        }
+        .logo {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            border: 3px solid #ff5722;
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+        h1 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+        p.subtitle {
+            font-size: 14px;
+            color: #b0b0b0;
+            margin-bottom: 20px;
+        }
+        .promo-banner {
+            background: linear-gradient(45deg, #ff5722, #ff9800);
+            color: #fff;
+            padding: 12px;
+            border-radius: 12px;
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(255, 87, 34, 0.3);
+        }
+        .section-title {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #ff9800;
+            margin: 20px 0 10px;
+            text-align: left;
+            font-weight: 600;
+        }
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #1e1e1e;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 14px 18px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #2a2a2a;
+            transition: all 0.2s ease;
+            font-weight: 500;
+            font-size: 15px;
+        }
+        .btn:hover {
+            border-color: #ff5722;
+            background-color: #252525;
+            transform: translateY(-2px);
+        }
+        .btn-primary {
+            background-color: #ff5722;
+            border-color: #ff5722;
+            font-weight: 700;
+            justify-content: center;
+            gap: 10px;
+        }
+        .btn-primary:hover {
+            background-color: #e64a19;
+        }
+        .icon {
+            font-size: 18px;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Logótipo / Perfil -->
+        <div style="background: #ff5722; width: 100px; height: 100px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; font-weight: bold; font-size: 20px; color: #fff;">
+            MUZZA
+        </div>
+        
+        <h1>Muzza Pizzarias</h1>
+        <p class="subtitle">Pizza ao teu ritmo! Escolha a sua loja e peça em 1 clique 🍕</p>
+
+        <!-- Destaque de Promoção -->
+        <div class="promo-banner">
+            🔥 Promoção Ativa: Paga 1 Leva 2!
+        </div>
+
+        <!-- Botão de Cardápio Geral -->
+        <a href="#" class="btn btn-primary">
+            <span>📜 Ver Cardápio Digital Completo</span>
+        </a>
+
+        <!-- Seleção de Lojas no WhatsApp -->
+        <div class="section-title">📍 Escolha a sua loja para pedir no WhatsApp:</div>
+
+        <a href="https://wa.me/258867720000?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20para%20a%20loja%20da%20Matola." class="btn" target="_blank">
+            <span>🍕 Matola | Novare</span>
+            <span class="icon">📲</span>
+        </a>
+
+        <a href="https://wa.me/258846110077?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20para%20a%20loja%20da%20Av.%2025%20de%20Setembro." class="btn" target="_blank">
+            <span>🍕 Av. 25 de Setembro</span>
+            <span class="icon">📲</span>
+        </a>
+
+        <a href="https://wa.me/258861110077?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20para%20a%20loja%20da%20Av.%2024%20de%20Julho." class="btn" target="_blank">
+            <span>🍕 Av. 24 de Julho</span>
+            <span class="icon">📲</span>
+        </a>
+
+        <a href="https://wa.me/258852223311?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20para%20a%20loja%20do%20Baia%20Mall." class="btn" target="_blank">
+            <span>🍕 Baia Mall</span>
+            <span class="icon">📲</span>
+        </a>
+
+        <a href="https://wa.me/258842223317?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20para%20a%20loja%20de%20Xiquelene." class="btn" target="_blank">
+            <span>🍕 Xiquelene</span>
+            <span class="icon">📲</span>
+        </a>
+
+        <a href="https://wa.me/258876110077?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20para%20a%20loja%20de%20Missão%20Roque." class="btn" target="_blank">
+            <span>🍕 Missão Roque</span>
+            <span class="icon">📲</span>
+        </a>
+
+        <div class="footer">
+            Muzza Pizzarias © 2026 • Todos os direitos reservados
+        </div>
+    </div>
+
+</body>
+</html>
